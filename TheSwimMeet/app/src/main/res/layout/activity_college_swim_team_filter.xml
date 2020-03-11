@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".collegeSwimTeamFilter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/boothRed"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/realgirldiving"
+            android:layout_width="401dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/girldivingfont"
+            tools:layout_editor_absoluteX="5dp" />
+
+
+        <Button
+            android:id="@+id/femaleD1Button"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:onClick="buttonFemaleDOneOnClick"
+            android:text="Division I "
+            android:textColor="@color/night"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/realgirldiving" />
+
+        <Button
+            android:id="@+id/femaleD2Button"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:onClick="buttonFemaleDTwoOnClick"
+            android:text="Division II"
+            android:textColor="@color/night"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/femaleD1Button" />
+
+        <Button
+            android:id="@+id/femaleD3Button"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:onClick="buttonFemaleDThreeOnClick"
+            android:text="Division III"
+            android:textColor="@color/night"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/femaleD2Button" />
+
+        <ImageView
+            android:id="@+id/maleSwimmer"
+            android:layout_width="400dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/femaleD3Button"
+            app:srcCompat="@drawable/maleswimmingfont"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <Button
+            android:id="@+id/maleD1Button"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Division I"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maleSwimmer" />
+
+        <Button
+            android:id="@+id/maleD2Button"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Division II"
+            android:textColor="@color/night"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maleD1Button" />
+
+        <Button
+            android:id="@+id/maleD3Button"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Division III"
+            android:textColor="@color/night"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maleD2Button" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".myGoals">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Enter data for any event. "
+        android:textColor="@color/pearl"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:hint=" Enter ID "
+        android:inputType="number"
+        android:textColor="@color/pearl"
+        android:textColorHint="@color/pearl"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edit_event"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:hint=" Enter Event "
+        android:inputType="numberDecimal|time"
+        android:textColor="@color/pearl"
+        android:textColorHint="@color/pearl"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edit_bestTime"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:hint=" Enter Best Time"
+        android:inputType="numberDecimal|time"
+        android:textColor="@color/pearl"
+        android:textColorHint="@color/pearl"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edit_GoalTime"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:hint="Enter Goal Time"
+        android:inputType="numberDecimal|time"
+        android:textColor="@color/pearl"
+        android:textColorHint="@color/pearl"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Save"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/night"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="View"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/night"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Delete"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/night"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Update"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/night"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/highlight_pearl_to_red"
+        android:text="Search"
+        android:textColor="@color/night"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            app:itemBackground="@color/boothRed"
+            app:itemIconTint="@drawable/icon_color_selector"
+            app:itemTextColor="@drawable/icon_color_selector"
+            app:menu="@menu/navigation_menu" />
+
+
+    </LinearLayout>

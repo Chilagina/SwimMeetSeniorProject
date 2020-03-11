@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timeStandards">
+
+    <ScrollView
+        android:id="@+id/nationalMeetStandardText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".TimeStandards.timeStandards">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/championStandardsText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_red_title_text"
+                android:paddingLeft="16dp"
+                android:paddingTop="45dp"
+                android:paddingBottom="32dp"
+                android:text="Check Time Standards and other Statistics "
+                android:textColor="@color/pearl"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/timeStandardsButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below= "@id/championStandardsText"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Time Standards"
+                android:background="@drawable/highlight_pearl_to_red"
+                android:onClick="buttonTimeStandardsOnClick"
+                android:textColor="@color/boothRed"/>
+
+
+            <Button
+                android:id="@+id/timeSearchButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/timeStandardsButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/highlight_pearl_to_red"
+                android:onClick="buttonTimeSearchOnClick"
+                android:text="Individual Time Search"
+                android:textColor="@color/boothRed" />
+
+
+            <Button
+                android:id="@+id/worldRecordsButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/worldRecordsButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/highlight_pearl_to_red"
+                android:onClick="buttonWorldRecordsOnClick"
+                android:text="U.S. AND WORLD RECORDS"
+                android:textColor="@color/boothRed" />
+
+
+            <Button
+                android:id="@+id/collegeRecords"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/worldRecordsButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/highlight_pearl_to_red"
+                android:onClick="buttonCollegeRecordsOnClick"
+                android:text="Find USS SWIM TEAM"
+                android:textColor="@color/colorPrimary" />
+
+
+            <Button
+                android:id="@+id/collegeSearchButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/collegeRecords"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/highlight_pearl_to_red"
+                android:onClick="buttonCollegeSearchOnClick"
+                android:text="FIND COLLEGE SWIM TEAM"
+                android:textColor="@color/colorPrimary" />
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_alignParentBottom="true"
+                app:itemBackground="@color/boothRed"
+                app:itemIconTint="@drawable/icon_color_selector"
+                app:itemTextColor="@drawable/icon_color_selector"
+                app:menu="@menu/navigation_menu" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

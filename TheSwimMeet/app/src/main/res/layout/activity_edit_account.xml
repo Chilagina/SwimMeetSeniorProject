@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".editAccount">
+
+
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolBar"
+           android:layout_width="400dp"
+           android:layout_height="wrap_content"
+           android:background="@color/boothRed"
+           android:elevation="4dp"
+           android:minHeight="?attr/actionBarSize"
+           android:theme="?attr/actionBarTheme">
+
+       </androidx.appcompat.widget.Toolbar>
+
+       <TextView
+        android:id="@+id/edit_username"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:hint="nickname"
+        android:paddingLeft="50dp"
+        android:paddingTop="8dp"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/opaquePearl"/>
+
+    <TextView
+        android:id="@+id/edit_team"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:hint="Team Name"
+        android:paddingLeft="50dp"
+        android:paddingTop="8dp"
+        android:textColorHint="@color/opaquePearl"/>
+
+    <TextView
+        android:id="@+id/edit_stroke"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:hint="Best Events"
+        android:paddingLeft="50dp"
+        android:paddingTop="8dp"
+        android:textColorHint="@color/opaquePearl"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_insert"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Save"
+            android:textColor="@color/night"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button_view_profile"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="View Profile"
+            android:textColor="@color/night"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Delete"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/night"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/highlight_pearl_to_red"
+            android:text="Update"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/night"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>

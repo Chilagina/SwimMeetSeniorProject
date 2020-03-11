@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000B29</color>
+    <color name="colorPrimaryDark">#4BF8F5F2</color>
+    <color name="colorAccent">#D70026</color>
+    <color name="boothRed">#D70026</color>
+    <color name="pearl">#F8F5F2</color>
+    <color name="night">#000B29</color>
+    <color name="FlashOrange">#C7111155</color>
+    <color name= "opaqueNight">#AA000B29</color>
+    <color name= "opaquePearl">#A7F8F5F2</color>
+    <color name= "opaqueRed">#AAD70026</color>
+</resources>

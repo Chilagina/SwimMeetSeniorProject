@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pearl"
+    tools:context=".myProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/night"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageButton
+                android:id="@+id/returnButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pearl">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageview_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/chilagina" />
+
+            <ImageButton
+                android:id="@+id/addPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageview_profile"
+                app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+
+            <TextView
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/pearl"
+                android:text="ChilaGina"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/teamText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/pearl"
+                android:text="Dad's Club Swim Team" />
+
+
+            <Button
+                android:id="@+id/editProfileButton"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/teamText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="buttonEditOnClick"
+                android:text="Edit My Profile"
+                android:textColor="@color/night"
+                android:textStyle="bold|italic" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:background="@color/night"
+                app:itemBackground="@color/night"
+                app:itemIconTint="@drawable/icon_color_selector"
+                app:itemTextColor="@drawable/icon_color_selector"
+                app:menu="@menu/navigation_menu" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
